@@ -1,0 +1,43 @@
+.card {
+  width: 80%;
+  height: 60%;
+  margin-top: 10%;
+  background-color: #ACB992;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  color: #362706;
+  text-align: center;
+  font-size: 5em;
+}
+
+.id-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+  color: #362706;
+  width: auto;
+}
+
+.input {
+  margin-top: 7%;
+  margin-left: 2%;
+  width: 50%;
+  background: #fff;
+  border-radius: 2em;
+  font-family: Arial, fantasy;
+  font-size: 5em;
+  color: #362706;
+  line-height: 1.2;
+}
+input {
+  outline: none;
+  border: none;
+}

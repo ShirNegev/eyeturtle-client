@@ -1,0 +1,24 @@
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<div *ngIf="!isLoading && questions.length > 0">
+  <div *ngFor="let quest of questions">
+    <div class="quiz-section">
+    <mat-card class="question-card" *ngIf="questions[currentQuestionNumber].id == quest.id">
+      <mat-card-title style="font-size: xxx-large; margin-bottom: 5%">{{quest.content}}</mat-card-title>
+      <mat-card-content>
+        <mat-card [class]="getIsSelectedClass(0)">
+          א.  {{quest.possible_answers[0]}}
+        </mat-card>
+        <mat-card [class]="getIsSelectedClass(1)">
+          ב.  {{quest.possible_answers[1]}}
+        </mat-card>
+        <mat-card [class]="getIsSelectedClass(2)">
+          ג.  {{quest.possible_answers[2]}}
+        </mat-card>
+      </mat-card-content>
+      <mat-card-actions>
+        שאלה {{currentQuestionNumber + 1}} מתוך {{questions.length}}
+      </mat-card-actions>
+    </mat-card>
+    </div>
+  </div>
+</div>

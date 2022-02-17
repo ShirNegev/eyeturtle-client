@@ -1,0 +1,12 @@
+<mat-card>
+  <div *ngIf="isLoading">
+    מחשב תוצאה
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <div *ngIf="!isLoading">
+
+    <div>התוצאה שלך היא:</div>
+    <div>{{result}}</div>
+  </div>
+</mat-card>
